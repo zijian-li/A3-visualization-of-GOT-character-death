@@ -2,6 +2,9 @@
 
 In this repo, we created four interactive visualization on death of characters in the hit series Game of Throne. Through the d3-based visualization, we want to help audiences to explore two key aspects of the dataset: 1) which character, or which group/house, suffered more death, or killed more people? 2) what’s the timeline of death, eg. when did the character die in the book or the series? We implemented directed graph and arc diagram for the first aspect, scatter plot and parallel coordinate plot for the second aspect. 
 
+See the following link for the interactive visualization. Spoiler alert!!!
+https://observablehq.com/@ionbond/character-death-and-killing-relationship
+
 ## Rationale for design desicions:
 ### Character Death and Killing in each house(Directed Graph)
 1.1 Visual encoding:
