@@ -34,19 +34,21 @@ The two major interaction techniques are displaying death details by mouse hover
 The timeline of a story is like the backbone of a man - it is straight but it tells a lot. We figure if we want to tell a story, we’d better have a timeline. Also with this philosophy, we would like to get a design that is on the one hand simple and straight, on the other hand as informative as possible. For simplicity, we drew only the most important axis - the time axis and used points to denote the occurrence of events. This way, we think it is clear that the time is the most important information we want to convey. We also wanted the timeline to be informative. We figured that using a temporary floating message box for detailed information will do the job while keeping the graph clean. Also for the reason of the cleaness,  we splitted the timeline into 8 seasons, so that we won’t have to show all the 200+ deaths in the same graph. So far the color of the dots does not encode any information except that the black and red color is usually culturally linked to tragic events like loss and deaths. In the later version we might consider encoding the allegiance or sex as color if that reviews interesting information. The transition animation is designed so that it is clear to the readers whether they are travelling forward or backward in time.
 
 ### Character Death Timeline(Parallel coordinate plot)
-	4.1 Visual encoding:
+4.1 Visual encoding:
 The dataset includes the character names,  allegiances, gender,  death year, and death in which     chapter of which book and if they are nobility e.t.c.To show multiple information at the same time, I think parallel coordinate is an appropriate choice. Each axis encodes a property of the death,  and each line path encodes the information of a character. The color encodes the gender of a character, red for female and blue for male.
 
-	4.2 Interaction techniques:
+4.2 Interaction techniques:
 Brushing with highlighted paths allows people to chose the data they are interested in, and somewhat shows distributions of the data. Dragging the axis makes the comparison easier to see. And the search function compensates for the drawback that the name axis can’t be brushed, though it’s not a good idea to brush the name. The search makes it possible to look up for characters that being cared about.	
 
-  4.3 Alternative ways:
+4.3 Alternative ways:
 Can do the Timeline plot like the timeline for the TV shows, by showing the details when hovers above the point. In that way, it’s easier to see the time structure of the deaths, but makes it difficult to view  from other aspects. With the parallel coordinate plot, one can easily tell which Houses are focused on in which book, and how many people are dead for what Houses. Another thought is to delete the “Name” info, and do a counting of each selected brush, that will give more precise statistics, but we decide to keep the Name because it’s important to people to look up for particular character.
 
 ## Overview of design process
-	Each of us worked on one visualization: 
+Each of us worked on one visualization: 
+
 - Zhengde Zhao: Directed graph. 15 hours.
 - Yaxuan Zhou: arc diagram. 15hours
 - Zijian Li: Scatter plot. 15 hours.
 - Yue Zhao: parallel coordinate plot. 15hours.
-	The preprocessing of data, customized design of visualization interface and debugging of errors took the most time.
+
+The preprocessing of data, customized design of visualization interface and debugging of errors took the most time.
